@@ -1,0 +1,521 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;  
+}
+
+/*header*/
+
+header, footer
+{ 
+    text-align: center;
+    padding: 20px;
+}
+
+header img
+{
+    width: 150px;
+}
+
+header h1
+{   
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    font-family: 'Black Ops One', cursive;
+    -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+}   
+
+nav 
+{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-image: url(../Img/texturafooter.png);
+    color: white;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;     
+}
+
+nav a
+{
+   text-decoration: none; 
+   color: white;
+   font-size: 20px;
+   background-color: rgb(204, 137, 13);
+   border-radius: 20px;
+   padding: 10px;
+}
+
+
+nav a:hover
+{
+   text-shadow:  2px 2px 2px black;
+   background-color: orange;
+   border: 3px solid rgb(255, 255, 255);
+}
+
+li
+{
+    display: inline;
+    margin: 8px;
+}
+
+/*cuerpo de la pagina*/
+
+body
+{   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto Mono, monospace;
+    background:linear-gradient(orange,rgb(97, 30, 185) 70%);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+
+h3
+{   
+    font-size: 30px;
+    color: black;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+.nombre_pagina
+{
+    font-family: 'Black Ops One', cursive;
+    font-size: 50px;
+    color: black;
+    -webkit-text-stroke: .1px white;
+}
+
+/* pagina inicio*/
+
+.index_layaout
+{  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto auto auto auto);
+    grid-template-areas: 
+    "n1 n1 n2"
+    "n3 n3 n2"
+    "n4 n4 n2"
+    "n5 n5 n2"
+    "n6 n6 n6";
+    background-color: rgba(255, 255, 255, 0.452);
+    max-width: 1200px;
+    width: 90%;
+    height: 100%;
+    margin-top: 30px;
+    padding: 30px;
+    gap: 30px;
+    padding-bottom: 30px;
+    text-align: justify;
+    border-radius: 20px 20px 0px 0px;
+    border: 2px solid white;
+    border-bottom: 0px;
+      
+}
+
+img
+{
+    width: 100%;
+    object-fit: cover;
+}
+
+.articulo1
+{   
+    grid-area: n1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.articulo2
+{
+    grid-area: n2;
+}
+
+.articulo3
+{
+    grid-area: n3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.articulo4
+{
+    grid-area: n4;
+}
+
+.articulo5
+{
+    grid-area: n5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.articulo6
+{
+    grid-area: n6;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+/* pagina pokeomn*/
+
+.pokemon_layaout
+{
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.452);
+    max-width: 1200px;
+    width: 90%;
+    height: 100%;
+    margin-top: 30px;
+    padding: 30px;
+    gap: 30px;
+    padding-bottom: 30px;
+    text-align: justify;
+    border-radius: 20px 20px 0px 0px;
+    border: 2px solid white;
+    border-bottom: 0px;
+}
+
+/* pagina imagenes*/
+
+.imagenes_layaout
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.452);
+    max-width: 1200px;
+    width: 90%;
+    height: 100%;
+    margin-top: 30px;
+    padding: 30px;
+    gap: 30px;
+    padding-bottom: 30px;
+    text-align: justify;
+    border-radius: 20px 20px 0px 0px;
+    border: 2px solid white;
+    border-bottom: 0px; 
+}
+
+.gallery
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery .escritorio
+{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery  .celular 
+{
+    display: grid;
+    grid-template-columns: repeat(4,  1fr);
+    gap: 20pX;
+}
+
+.gallery_item img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/**pagina objetos*/
+
+.objetos_layaout
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.452);
+    max-width: 1200px;
+    width: 90%;
+    height: 100%;
+    margin-top: 30px;
+    padding: 30px;
+    gap: 30px;
+    text-align: justify;
+    border-radius: 20px 20px 0px 0px;
+    border: 2px solid white;
+    border-bottom: 0px;
+}
+
+section .objeto
+{
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: auto;
+    margin-bottom: 20px;
+}
+
+.objeto .textos
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(255, 166, 0, 0.425);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.objeto img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+    
+}
+
+
+@media screen and ( max-width:576px)
+{
+    .objetos_layaout h3, .nombre_pagina
+    {
+        text-align: center;
+    }
+
+    section .objeto
+    {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .objeto .textos
+    {
+        border-radius: 0px 0px 20px 20px;
+    }
+    .objeto img
+    {
+        border-radius: 20px 20px 0px 0px ;  
+    }
+
+    
+
+}
+
+/*pagina clases*/
+
+.clases_layaout 
+{
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.452);
+    max-width: 1200px;
+    width: 90%;
+    height: 100%;
+    margin-top: 30px;
+    padding: 30px;
+    gap: 30px;
+    padding-bottom: 30px;
+    text-align: justify;
+    border-radius: 20px 20px 0px 0px;
+    border: 2px solid white;
+    border-bottom: 0px; 
+}
+
+
+.clases_layaout .contenedor_clase
+{
+    display: grid;
+    grid-template-columns: 30%  auto;
+    grid-template-rows: repeat(4,auto);
+    background-color: rgba(97, 30, 185, 0.349);
+    border-radius: 20px;
+}
+
+.contenedor_clase .textos
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px;
+}
+
+@media screen and ( max-width: 900px )
+{
+    .clases_layaout .contenedor_clase
+    {   
+        grid-template-columns: 40% auto;
+    }
+
+}
+
+@media screen and ( max-width: 576px )
+{
+    .clases_layaout .contenedor_clase
+    {   
+        grid-template-columns: auto;
+    }
+
+    .textos  h3 
+    {
+        text-align: center;
+    }
+
+    .image-links
+    {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+
+}
+/*cards*/
+
+.pokemon_layaout h3  
+{
+    background-color: orange;
+    text-align: center;
+}
+
+.poke_agil
+{   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+}
+.poke_auxiliar
+{   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+}
+.poke_defensivo
+{   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+}
+.poke_equilibrado
+{   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+}
+.poke_ofensivo
+{   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px;
+}
+
+.contenedor_pokemon .card:hover
+{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba( 0,0,0,.5);
+}
+
+.card
+{
+    border-radius: 20px;
+    border: 5px solid black ;
+    background-image: url(../Img/texturafooter.png);
+    display: flex;
+    flex-direction: column;
+}
+
+.poke_agil img
+{
+    
+    background-color: rgba(0, 255, 255, 0.486);
+    border-radius:20px 20px 0px 0px ; 
+}
+
+.poke_auxiliar img
+{
+    background-color: rgba(233, 106, 226, 0.884);
+    border-radius:20px 20px 0px 0px;
+}
+
+.poke_defensivo img
+{
+    background-color: rgba(50, 226, 50, 0.589); 
+    border-radius:20px 20px 0px 0px;
+}
+
+.poke_equilibrado img
+{
+    background-color: rgba(111, 0, 255, 0.452);
+    border-radius:20px 20px 0px 0px; 
+}
+
+.poke_ofensivo img
+{
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius:20px 20px 0px 0px;
+}
+    
+
+.card .contenido
+{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 10px;
+    margin: 10px;
+    gap: 20px;
+    border-radius: 0px 0px 20px 20px;
+    flex-grow: 1;
+    flex-wrap: 1;
+}
+
+
+
+
+
+
+/*--------------footer----------------------------*/
+
+footer
+{
+    background-image: url(../Img/texturafooter.png);
+    background-repeat: round;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+}
+
+footer h3
+{
+    color: white;
+}
+
+.image-links
+{
+ display: flex;
+ justify-content: center; 
+ gap: 20px;
+}
+
