@@ -87,12 +87,17 @@
             display: flex;
             flex-direction: column;
 
-            .articulo2
+           .articulo2
+           {
+                height: 400px;
+                overflow: hidden;
+                
+           }
+
+            iframe
             {
-                display: none;
-            }
-
-
+               width: 100%
+            } 
         }
 
          

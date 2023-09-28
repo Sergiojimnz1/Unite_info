@@ -8,11 +8,11 @@
   font-size: 1rem;
 }
 
-nav {
+.nav {
   background-image: url(../Img/texturafooter.png);
   width: 100%;
 }
-nav img {
+.nav img {
   width: 50px;
 }
 
@@ -48,7 +48,7 @@ nav img {
     background: transparent;
     border: 0;
   }
-  nav {
+  .nav {
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -62,11 +62,11 @@ nav img {
     height: 100vmax;
     border: white 5px solid;
   }
-  nav img {
+  .nav img {
     position: relative;
     width: 50px;
   }
-  nav .nav_list {
+  .nav .nav_list {
     gap: 50px;
     margin-top: 150px;
   }
@@ -145,7 +145,11 @@ nav img {
     text-align: center;
   }
   .index_layaout .articulo2 {
-    display: none;
+    height: 400px;
+    overflow: hidden;
+  }
+  .index_layaout iframe {
+    width: 100%;
   }
 }
 .objetos_layaout .objeto {
@@ -478,7 +482,7 @@ nav img {
   }
   .builds_layaout .builds_box .poke_obj img,
   .builds_layaout .builds_box2 .poke_obj img {
-    width: 120px;
+    width: 35%;
     border: black solid 5px;
     border-radius: 100%;
   }
@@ -504,7 +508,7 @@ header h1 {
   color: rgb(0, 0, 0);
   font-size: 60px;
   font-family: "Black Ops One", cursive;
-  -webkit-text-stroke: 0.1px rgb(255, 255, 255);
+  -webkit-text-stroke: 0.5px rgb(255, 255, 255);
 }
 
 body {
@@ -520,7 +524,7 @@ body .nombre_pagina {
   font-family: "Black Ops One", cursive;
   font-size: 50px;
   color: black;
-  -webkit-text-stroke: 0.1px white;
+  -webkit-text-stroke: 0.5px white;
 }
 body h3 {
   font-size: 30px;
