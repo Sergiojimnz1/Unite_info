@@ -9,8 +9,11 @@
 }
 
 nav {
-  background-image: url(/Img/texturafooter.png);
+  background-image: url(../Img/texturafooter.png);
   width: 100%;
+}
+nav img {
+  width: 50px;
 }
 
 .nav_list {
@@ -49,7 +52,7 @@ nav {
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    top: 190px;
+    top: 170px;
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.7);
     display: flex;
@@ -61,9 +64,11 @@ nav {
   }
   nav img {
     position: relative;
-    left: 0;
-    top: 0;
-    width: 80px;
+    width: 50px;
+  }
+  nav .nav_list {
+    gap: 50px;
+    margin-top: 150px;
   }
   .nav.visible {
     opacity: 1;
@@ -172,6 +177,10 @@ nav {
   .objetos_layaout .objeto img {
     border-radius: 20px 20px 0px 0px;
   }
+  .objetos_layaout h3, .objetos_layaout .nombre_pagina {
+    text-align: center;
+    padding-bottom: 10px;
+  }
 }
 
 .pokemon_layaout h3 {
@@ -241,7 +250,6 @@ nav {
     margin-top: 20px;
   }
   .pokemon_layaout h3, .pokemon_layaout .nombre_pagina {
-    margin-top: 20px;
     text-align: center;
   }
 }
@@ -272,6 +280,9 @@ nav {
   }
   .imagenes_layaout .gallery .celular {
     grid-template-columns: auto auto;
+  }
+  .imagenes_layaout h3, .imagenes_layaout .nombre_pagina {
+    text-align: center;
   }
 }
 
@@ -377,6 +388,9 @@ nav {
     height: 100%;
     border-radius: 20px 20px 0px 0px;
   }
+  .clases_layaout h3, .clases_layaout .nombre_pagina {
+    text-align: center;
+  }
 }
 
 .builds_layaout .builds_box {
@@ -434,31 +448,36 @@ nav {
   border: black solid 5px;
   border-radius: 100%;
 }
-@media screen and (max-width: 800px) {
-  .builds_layaout .builds_box, .builds_layaout .builds_box2 {
+@media screen and (max-width: 600px) {
+  .builds_layaout .builds_box,
+  .builds_layaout .builds_box2 {
     display: flex;
     flex-direction: column;
     border-radius: 20px 20px 20px 20px;
     border: white 5px solid;
     padding: 20px;
-    background-image: url(/Img/texturafooter.png);
+    background-image: url(../Img/texturafooter.png);
   }
-  .builds_layaout .builds_box .poke_img, .builds_layaout .builds_box2 .poke_img {
+  .builds_layaout .builds_box .poke_img,
+  .builds_layaout .builds_box2 .poke_img {
     width: 100%;
     overflow: hidden;
     border-radius: 20px 20px 0px 0px;
   }
-  .builds_layaout .builds_box .poke_img img, .builds_layaout .builds_box2 .poke_img img {
+  .builds_layaout .builds_box .poke_img img,
+  .builds_layaout .builds_box2 .poke_img img {
     background-color: rgb(32, 179, 32);
   }
-  .builds_layaout .builds_box .poke_obj, .builds_layaout .builds_box2 .poke_obj {
+  .builds_layaout .builds_box .poke_obj,
+  .builds_layaout .builds_box2 .poke_obj {
     border-radius: 0px 0px 20px 20px;
     background-color: rgb(255, 255, 255);
     width: 100%;
     height: 100%;
     padding: 20px;
   }
-  .builds_layaout .builds_box .poke_obj img, .builds_layaout .builds_box2 .poke_obj img {
+  .builds_layaout .builds_box .poke_obj img,
+  .builds_layaout .builds_box2 .poke_obj img {
     width: 120px;
     border: black solid 5px;
     border-radius: 100%;
@@ -468,6 +487,9 @@ nav {
   }
   .builds_layaout .builds_box2 .poke_img {
     border-radius: 0px 0px 20px 20px;
+  }
+  .builds_layaout h3, .builds_layaout .nombre_pagina {
+    text-align: center;
   }
 }
 
@@ -486,6 +508,7 @@ header h1 {
 }
 
 body {
+  width: 100%;
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -530,9 +553,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  color: white;
-}
-footer h3 {
   color: white;
 }
 footer .image-links {
