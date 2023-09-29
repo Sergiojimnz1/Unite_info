@@ -44,7 +44,7 @@ button img {
 }
 
 .botonera {
-  background-image: url(../img/texturafooter.png);
+  background-image: url(../Img/texturafooter.png);
   display: flex;
   justify-content: space-around;
   align-items: center;
