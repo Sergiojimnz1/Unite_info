@@ -106,13 +106,8 @@ button img {
 }
 
 @media screen and (max-width: 600px) {
-  .botonera {
-    justify-content: space-between;
-    padding: 5px;
-    border-radius: 35px;
-  }
   .botonera img {
-    width: 35px;
+    width: 30px;
   }
   .abrir_menu, .cerrar_menu {
     display: block;
