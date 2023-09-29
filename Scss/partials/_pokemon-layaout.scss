@@ -93,6 +93,25 @@
         border-radius:20px 20px 0px 0px;
     }
 
+    @media screen and ( max-width: 800px )
+    {   
+        .contenedor_pokemon
+        {
+            .poke_agil
+            {
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: auto;
+            }
+        }
+
+        h3, .nombre_pagina
+        {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+
+    }
     @media screen and ( max-width: 600px )
     {   
         .contenedor_pokemon
@@ -106,7 +125,17 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        h3, .nombre_pagina
+        {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+
     }
+
+
     
 }
 

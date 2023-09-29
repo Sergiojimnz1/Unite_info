@@ -43,6 +43,68 @@ button img {
   display: none;
 }
 
+.botonera {
+  background-image: url(../img/texturafooter.png);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  border-radius: 35px;
+}
+.botonera img {
+  width: 60px;
+}
+.botonera .bt1 {
+  border-radius: 100%;
+  border: solid black 3px;
+  padding: 5px;
+  background-color: aqua;
+}
+.botonera .bt1:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 7px aqua;
+}
+.botonera .bt2 {
+  border-radius: 100%;
+  border: solid black 3px;
+  padding: 5px;
+  background-color: pink;
+}
+.botonera .bt2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 7px pink;
+}
+.botonera .bt3 {
+  border-radius: 100%;
+  border: solid black 3px;
+  padding: 5px;
+  background-color: green;
+}
+.botonera .bt3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 7px green;
+}
+.botonera .bt4 {
+  border-radius: 100%;
+  border: solid black 3px;
+  padding: 5px;
+  background-color: purple;
+}
+.botonera .bt4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 7px purple;
+}
+.botonera .bt5 {
+  border-radius: 100%;
+  border: solid black 3px;
+  padding: 5px;
+  background-color: red;
+}
+.botonera .bt5:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 7px red;
+}
+
 @media screen and (max-width: 600px) {
   .abrir_menu, .cerrar_menu {
     display: block;
@@ -250,6 +312,16 @@ button img {
   background-color: rgba(255, 30, 0, 0.596);
   border-radius: 20px 20px 0px 0px;
 }
+@media screen and (max-width: 800px) {
+  .pokemon_layaout .contenedor_pokemon .poke_agil, .pokemon_layaout .contenedor_pokemon .poke_auxiliar, .pokemon_layaout .contenedor_pokemon .poke_defensivo, .pokemon_layaout .contenedor_pokemon .poke_equilibrado, .pokemon_layaout .contenedor_pokemon .poke_ofensivo {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .pokemon_layaout h3, .pokemon_layaout .nombre_pagina {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
 @media screen and (max-width: 600px) {
   .pokemon_layaout .contenedor_pokemon {
     display: flex;
@@ -258,6 +330,10 @@ button img {
   .pokemon_layaout .contenedor_pokemon .poke_agil, .pokemon_layaout .contenedor_pokemon .poke_auxiliar, .pokemon_layaout .contenedor_pokemon .poke_defensivo, .pokemon_layaout .contenedor_pokemon .poke_equilibrado, .pokemon_layaout .contenedor_pokemon .poke_ofensivo {
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .pokemon_layaout h3, .pokemon_layaout .nombre_pagina {
+    text-align: center;
+    padding-bottom: 10px;
   }
 }
 
@@ -538,13 +614,13 @@ body .btn {
   width: 100%;
   height: 100%;
 }
-body .flecha img {
+body .btn .flecha img {
   width: 100px;
   position: fixed;
   bottom: 20px;
   right: 20px;
 }
-body .flecha img:hover {
+body .btn .flecha img:hover {
   transform: translateY(-20px);
 }
 
@@ -569,7 +645,7 @@ footer {
   text-align: center;
   background-image: url(../Img/texturafooter.png);
   width: 100%;
-  height: 400px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   gap: 40px;
